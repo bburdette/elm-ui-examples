@@ -80,14 +80,14 @@ view model =
                 , placeholder = Just (Input.placeholder [] <| text model)
                 , label = Input.labelAbove [ Font.bold ] <| text "works: egregious hack, estimating with from char count."
                 }
-            , textAreaToContents
+            , sizeWithUnderlyingRow
                 [ Border.rounded 0
                 , width shrink
                 ]
                 { onChange = Type
                 , text = model
                 , placeholder = Just (Input.placeholder [] <| text model)
-                , label = Input.labelAbove [ Font.bold ] <| text "works: textAreaToContents"
+                , label = Input.labelAbove [ Font.bold ] <| text "works: sizeWithUnderlyingRow"
                 }
             ]
         )
@@ -104,8 +104,8 @@ type alias TextInputSpecs msg =
 {-| this works ok for labelAbove, but for LabelLeft would have to add in the label text to the
 invisible row text.
 -}
-textAreaToContents : List (Attribute msg) -> TextInputSpecs msg -> Element msg
-textAreaToContents attr specs =
+sizeWithUnderlyingRow : List (Attribute msg) -> TextInputSpecs msg -> Element msg
+sizeWithUnderlyingRow attr specs =
     row
         (inFront (Input.text [ width fill ] specs)
             :: attr
