@@ -78,7 +78,7 @@ view model =
                 { onChange = Type
                 , text = model
                 , placeholder = Just (Input.placeholder [] <| text model)
-                , label = Input.labelAbove [ Font.bold ] <| text "works: egregious hack, estimating with from char count."
+                , label = Input.labelAbove [ Font.bold ] <| text "works: egregious hack, estimating from char count."
                 }
             , sizeWithUnderlyingRow
                 [ Border.rounded 0
