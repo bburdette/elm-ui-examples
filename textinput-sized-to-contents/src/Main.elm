@@ -4,6 +4,7 @@ import Browser
 import Element exposing (..)
 import Element.Background as Background
 import Element.Border as Border
+import Element.Font as Font
 import Element.Input as Input
 import Html exposing (Html)
 import Html.Events exposing (onClick)
@@ -68,7 +69,7 @@ view model =
                 { onChange = Type
                 , text = model
                 , placeholder = Just (Input.placeholder [] <| text model)
-                , label = Input.labelAbove [] <| text "placeholder?"
+                , label = Input.labelAbove [] <| text "placeholder? nope."
                 }
             , Input.text
                 [ Border.rounded 0
@@ -77,7 +78,7 @@ view model =
                 { onChange = Type
                 , text = model
                 , placeholder = Just (Input.placeholder [] <| text model)
-                , label = Input.labelAbove [] <| text "egregious hack"
+                , label = Input.labelAbove [ Font.bold ] <| text "works: egregious hack, estimating with from char count."
                 }
             , textAreaToContents
                 [ Border.rounded 0
@@ -86,9 +87,7 @@ view model =
                 { onChange = Type
                 , text = model
                 , placeholder = Just (Input.placeholder [] <| text model)
-
-                -- , label = Input.labelHidden "textAreaToContents"
-                , label = Input.labelAbove [] <| text "textAreaToContents"
+                , label = Input.labelAbove [ Font.bold ] <| text "works: textAreaToContents"
                 }
             ]
         )
@@ -102,10 +101,17 @@ type alias TextInputSpecs msg =
     }
 
 
+{-| this works ok for labelAbove, but for LabelLeft would have to add in the label text to the
+invisible row text.
+-}
 textAreaToContents : List (Attribute msg) -> TextInputSpecs msg -> Element msg
 textAreaToContents attr specs =
-    row (inFront (Input.text [ width fill ] specs) :: attr)
-        [ text specs.text
+    row
+        (inFront (Input.text [ width fill ] specs)
+            :: attr
+            ++ [ paddingXY 15 0, alignLeft ]
+        )
+        [ el [ Font.color (rgba 0 0 0 0) ] <| text specs.text
         ]
 
 
