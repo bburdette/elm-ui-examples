@@ -1,7 +1,8 @@
 
--- there's a bug where the multiline control doesn't show the text passed in to 'text', instead you get old text or text from ever a different instance of multiline.
--- this workaround seems to fix it. 
-
+{- there's a bug where the multiline control doesn't show the text passed in to 'text', 
+   instead you get old text or text from a different instance of multiline.  
+   This workaround seems to fix it. 
+-}
 workAroundMultiLine :
     List (Attribute msg)
     ->
