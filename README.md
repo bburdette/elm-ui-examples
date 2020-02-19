@@ -14,3 +14,7 @@ Here are a couple of ellies showing the blink problem and then fixing it by load
  
 Before, with blinking:  https://ellie-app.com/5JtKXXPmpKta1
 After, blinking fixed:  https://ellie-app.com/5JvNzmS5Qxba1
+
+# toggle
+
+fancy animated toggle switch: https://ellie-app.com/85HbWTjCGWha1
