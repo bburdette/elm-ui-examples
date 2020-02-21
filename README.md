@@ -18,3 +18,7 @@ After, blinking fixed:  https://ellie-app.com/5JvNzmS5Qxba1
 # toggle
 
 fancy animated toggle switch: https://ellie-app.com/85HbWTjCGWha1
+
+# tooltips
+
+tooltips plus some interesting 'never' usage:  https://ellie-app.com/7R2VHTzHJYYa1
