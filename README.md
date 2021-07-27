@@ -6,7 +6,11 @@ Do you have some code that belongs here?  Contributions welcome.  Maybe some of 
 
 Also check out rofrol's repo here:  https://github.com/rofrol/elm-ui-cookbook
 
-# blinky fonts.
+# code block
+
+I wanted a text area to display code - preserving whitespace but still doing line wrap.  This works as expected, wrapping on spaces and then breaking words if necessary.  https://ellie-app.com/dQTRJhnwV4za1
+
+# (non) blinky fonts.
 
 Using Element.Font.external results in blinky UI due to font reloading.
 
