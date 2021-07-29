@@ -10,6 +10,8 @@ Also check out rofrol's repo here:  https://github.com/rofrol/elm-ui-cookbook
 
 I wanted a text area to display code - preserving whitespace but still doing line wrap.  This works as expected, wrapping on spaces and then breaking words if necessary.  https://ellie-app.com/dQTRJhnwV4za1
 
+here's a horizontally scrolling version:  https://ellie-app.com/dRKJ7QHcmPma1
+
 # (non) blinky fonts.
 
 Using Element.Font.external results in blinky UI due to font reloading.
