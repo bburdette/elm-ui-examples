@@ -8,7 +8,7 @@ Also check out rofrol's repo here:  https://github.com/rofrol/elm-ui-cookbook
 
 # simple dialog
 
-displaying elements centered in front of other elements:  https://ellie-app.com/dY9kyNpJVYKa1
+displaying elements centered in front of other elements:  https://ellie-app.com/dYb8K3K38NPa1
 
 for an actual dialog you'd probably want to map the events from the background to a Noop msg.
 
