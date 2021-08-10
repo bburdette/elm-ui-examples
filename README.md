@@ -6,6 +6,12 @@ Do you have some code that belongs here?  Contributions welcome.  Maybe some of 
 
 Also check out rofrol's repo here:  https://github.com/rofrol/elm-ui-cookbook
 
+# simple dialog
+
+displaying elements centered in front of other elements:  https://ellie-app.com/dY9kyNpJVYKa1
+
+for an actual dialog you'd probably want to map the events from the background to a Noop msg.
+
 # code block
 
 I wanted a text area to display code - preserving whitespace but still doing line wrap.  This works as expected, wrapping on spaces and then breaking words if necessary.  https://ellie-app.com/dQTRJhnwV4za1
