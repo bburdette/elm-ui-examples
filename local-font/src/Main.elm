@@ -19,7 +19,7 @@ initialModel =
 
 type Lunch
     = Burrito
-    | Sallad
+    | Salad
     | Cake
 
 type Msg
@@ -42,8 +42,8 @@ view model =
             [ Element.Font.typeface "Groovtastic"
             , Element.Font.sansSerif
             ]
-        , Element.Font.extraLight
-        , Element.Font.italic
+        -- , Element.Font.extraLight
+        -- , Element.Font.italic
         , Element.Font.center
         , Element.padding 10
         ]
@@ -56,7 +56,7 @@ view model =
             , selected = Just model.lunch
             , options =
                 [ Element.Input.option Burrito (Element.text "Burrito!")
-                , Element.Input.option Sallad (Element.text "Sallad")
+                , Element.Input.option Salad (Element.text "Salad")
                 , Element.Input.option Cake (Element.text "Cake")
                 ]
             }
