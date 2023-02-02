@@ -35,7 +35,7 @@ fancy animated toggle switch: https://ellie-app.com/85HbWTjCGWha1
 
 tooltips plus some interesting 'never' usage:  https://ellie-app.com/7R2VHTzHJYYa1
 
-# highlighing rows in elm-ui tables
+# highlighting rows in elm-ui tables
 
 you have to track the highlight row in the model, and put mouse events in each cell:
 
