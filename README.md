@@ -40,3 +40,12 @@ tooltips plus some interesting 'never' usage:  https://ellie-app.com/7R2VHTzHJYY
 you have to track the highlight row in the model, and put mouse events in each cell:
 
 https://ellie-app.com/kSZPrk5BCRNa1
+
+# stopping event propogation
+
+you can stop event propogation on an Element.link or Element.button with:
+
+```
+ Element.link  [ Element.htmlAttribute <| Html.Events.stopPropagationOn "click" (JD.succeed ( <no-op msg>, True ))]
+     { url = ... , label = ... }
+```
