@@ -49,3 +49,8 @@ you can stop event propogation on an Element.link or Element.button with:
  Element.link  [ Element.htmlAttribute <| Html.Events.stopPropagationOn "click" (JD.succeed ( <no-op msg>, True ))]
      { url = ... , label = ... }
 ```
+# clipping text on a single line
+
+You want text to stay on one line and get clipped no matter how long it is.  Here's an egregious hack.  Make it a paragraph that will flow onto the next line, but give it a fixed height so that the next line is not visible to the user.  clipX + fixed height + (HA.style "word-break" "break-word")
+
+https://ellie-app.com/y9JDS5fLhhfa1
