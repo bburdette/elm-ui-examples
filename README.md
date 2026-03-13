@@ -51,6 +51,15 @@ you can stop event propogation on an Element.link or Element.button with:
 ```
 # clipping text on a single line
 
-You want text to stay on one line and get clipped no matter how long it is.  Here's an egregious hack.  Make it a paragraph that will flow onto the next line, but give it a fixed height so that the next line is not visible to the user.  clipX + fixed height + (HA.style "word-break" "break-word")
+You want text to stay on one line and get clipped no matter how long it is.  Here's an egregious hack.  Make it a paragraph that will flow onto the next line, but give it a fixed height so that the next line is not visible to the user.  
 
-https://ellie-app.com/y9JDS5fLhhfa1
+```
+                   , E.paragraph [ 
+                        E.height (E.px <| fontsize * 5 // 4)
+                        , E.htmlAttribute (HA.style "overflow-wrap" "anywhere")
+                        , E.htmlAttribute (HA.style "overflow" "clip")
+                        ]
+                        [ E.text s ]
+```
+
+https://ellie-app.com/yc47N8YkXMDa1
