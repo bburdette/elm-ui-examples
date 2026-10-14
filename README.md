@@ -18,7 +18,7 @@ I wanted a text area to display code - preserving whitespace but still doing lin
 
 without the line breaks, here's a horizontally scrolling version:  
 fixed width:  https://ellie-app.com/dRM6XjdZf3Xa1
-and width fill:  https://ellie-app.com/B8PTYctBdh9a1
+and width fill:  https://ellie-app.com/B8RhLF2FfGwa1
 
 # (non) blinky fonts.
 
