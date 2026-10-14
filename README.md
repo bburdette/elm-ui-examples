@@ -16,7 +16,9 @@ for an actual dialog you'd probably want to map the events from the background t
 
 I wanted a text area to display code - preserving whitespace but still doing line wrap.  This works as expected, wrapping on spaces and then breaking words if necessary.  https://ellie-app.com/dQTRJhnwV4za1
 
-here's a horizontally scrolling version:  https://ellie-app.com/dRM6XjdZf3Xa1
+without the line breaks, here's a horizontally scrolling version:  
+fixed width:  https://ellie-app.com/dRM6XjdZf3Xa1
+and width fill:  https://ellie-app.com/B8PTYctBdh9a1
 
 # (non) blinky fonts.
 
